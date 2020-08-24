@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9556c47-7970-42cb-927a-5fd66e8a9096" name="Default Changelist" comment="" />
+    <list default="true" id="d9556c47-7970-42cb-927a-5fd66e8a9096" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GateAND.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GateNOT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GateOR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IPin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OPin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Device/Device.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Device/GateAND.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Device/GateNOT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Device/GateOR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Device/IPin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Device/OPin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/LogicSimulator/LogicSimulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ViewAndController/TextUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Model/DeviceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Model/LogicSimulatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Model.DeviceTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Model.LogicSimulatorTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/Model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Model.DeviceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Model.LogicSimulatorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeviceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LogicSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogicSimulatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="293" />
@@ -38,18 +94,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1fqfFfMge6DMwGhJggJRlCFfwyu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -59,13 +121,25 @@
       <recent name="C:\109OrientationCourse_Object-Oriented Programming\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in '109OrientationCourse_Object-Oriented_Programming.test'">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="109OrientationCourse_Object-Oriented_Programming.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.LogicSimulatorTest">
+    <configuration name="DeviceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;DeviceTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="DeviceTest.testDevicePolymorphism" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -149,14 +223,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LogicSimulatorTest" />
+        <item itemvalue="Gradle.DeviceTest" />
         <item itemvalue="Gradle.Tests in '109OrientationCourse_Object-Oriented_Programming.test'" />
         <item itemvalue="Gradle.Tests in 'Model'" />
         <item itemvalue="Gradle.DeviceTest.testDevicePolymorphism" />
-        <item itemvalue="Gradle.LogicSimulatorTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -180,17 +255,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597304147678" />
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596960713020">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="74" y="73" width="1389" height="679" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598252559742">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="74" y="73" width="1389" height="679" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1598252559742" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596960713020" />
-    <state x="702" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596951140027">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="562" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598249116124">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="562" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1598249116124" />
     <state x="702" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596951140027" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1597298616461">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser" timestamp="1598249933824">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="612" y="181" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598249933824" />
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597298616461" />
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597045005416" />
     <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597305123498">
@@ -210,49 +288,51 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="380" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597303899665" />
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom" timestamp="1597306904928">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1598259242026">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
-    <state width="1493" height="170" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598259242026" />
     <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918341" />
-    <state width="1877" height="170" key="GridCell.Tab.0.center" timestamp="1597306904928">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1598259242026">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
-    <state width="1493" height="170" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598259242026" />
     <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918340" />
-    <state width="1877" height="170" key="GridCell.Tab.0.left" timestamp="1597306904928">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1598259242026">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
-    <state width="1493" height="170" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598259242026" />
     <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918340" />
-    <state width="1877" height="170" key="GridCell.Tab.0.right" timestamp="1597306904928">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1598259242026">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597066909270" />
-    <state width="1493" height="170" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597301956505" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598259242026" />
     <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597306904928" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597046694324" />
     <state width="2517" height="171" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1597134918341" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1597412412083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="370" y="113" key="SettingsEditor" timestamp="1598249431251">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="370" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598249431251" />
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597412412083" />
     <state x="615" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596952324768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="615" y="138" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596952324768" />
-    <state x="702" y="240" key="run.anything.popup" timestamp="1597304311040">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="562" y="190" key="run.anything.popup" timestamp="1598257667510">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="562" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598257667510" />
     <state x="702" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1597304311040" />
     <state x="936" y="240" key="run.anything.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1597131720400" />
     <state x="831" y="225" width="896" height="678" key="search.everywhere.popup" timestamp="1597124045852">
