@@ -21,6 +21,8 @@ public class LogicSimulator
         StringBuilder contentBuilder = new StringBuilder();
         String command = "";
 
+        System.out.println(file);
+
         try
         {
             fileReader = new FileReader(file);
@@ -53,6 +55,9 @@ public class LogicSimulator
         setIPin(commandSplit[0]);
 
         int gateNumber = Integer.parseInt(commandSplit[1]);
+
+        //System.out.println(gateNumber);
+
         boolean[] isOut = new boolean[gateNumber];
         for(int i = 0; i < gateNumber; i++)
             isOut[i] = false;
@@ -80,7 +85,6 @@ public class LogicSimulator
         boolean isSet = false;
 
         int iPinNumber = Integer.parseInt(command);
-        //System.out.println(command);
         //System.out.println(iPinNumber);
 
         for(int i = 0; i < iPinNumber; i++)
@@ -97,6 +101,8 @@ public class LogicSimulator
         boolean isSet = false;
         String[] commandSplit = command.split(" ");
         Device device = null;
+
+        //System.out.println(command);
 
         switch (commandSplit[0])
         {
@@ -159,17 +165,28 @@ public class LogicSimulator
 
         simulationResult += "Simulation Result:\n";
 
+        //System.out.println("iPin size: " + iPin.size());
+
         for(int i = 0; i < iPin.size(); i++)
             simulationResult += "i ";
-        simulationResult += "| o\n";
+        simulationResult += "|";
+        for(int i = 0; i < oPin.size(); i++)
+            simulationResult += " o";
+        simulationResult += "\n";
 
         for(int i = 1; i <= iPin.size(); i++)
             simulationResult = simulationResult + i + " ";
-        simulationResult += "| 1\n";
+        simulationResult += "|";
+        for(int i = 1; i <= oPin.size(); i++)
+            simulationResult += " " + i;
+        simulationResult += "\n";
 
         for(int i = 0; i < iPin.size(); i++)
             simulationResult += "--";
-        simulationResult += "+--\n";
+        simulationResult += "+";
+        for(int i = 0; i < oPin.size(); i++)
+            simulationResult += "--";
+        simulationResult += "\n";
 
         for(int i = 0; i < iPin.size(); i++)
             iPin.get(i).setInput(booleans.get(i));
@@ -186,12 +203,19 @@ public class LogicSimulator
             simulationResult = simulationResult + result + " ";
         }
 
-        if(oPin.get(0).getOutput())
-            result = 1;
-        else
-            result = 0;
+        simulationResult += "|";
 
-        simulationResult = simulationResult + "| " + result + "\n";
+        for(int i = 0; i < oPin.size(); i++)
+        {
+            if(oPin.get(i).getOutput())
+                result = 1;
+            else
+                result = 0;
+
+            simulationResult = simulationResult + " " + result;
+        }
+
+        simulationResult += "\n";
 
         System.out.println(simulationResult);
 
@@ -206,15 +230,24 @@ public class LogicSimulator
 
         for(int i = 0; i < iPin.size(); i++)
             truthTable += "i ";
-        truthTable += "| o\n";
+        truthTable += "|";
+        for(int i = 0; i < oPin.size(); i++)
+            truthTable += " o";
+        truthTable += "\n";
 
         for(int i = 1; i <= iPin.size(); i++)
             truthTable = truthTable + i + " ";
-        truthTable += "| 1\n";
+        truthTable += "|";
+        for(int i = 1; i <= oPin.size(); i++)
+            truthTable += " " + i;
+        truthTable += "\n";
 
         for(int i = 0; i < iPin.size(); i++)
             truthTable += "--";
-        truthTable += "+--\n";
+        truthTable += "+";
+        for(int i = 0; i < oPin.size(); i++)
+            truthTable += "--";
+        truthTable += "\n";
 
         boolean[] booleans = new boolean[iPin.size()];
 
@@ -254,12 +287,19 @@ public class LogicSimulator
                 truthTable = truthTable + result + " ";
             }
 
-            if(oPin.get(0).getOutput())
-                result = 1;
-            else
-                result = 0;
+            truthTable += "|";
 
-            truthTable = truthTable + "| " + result + "\n";
+            for(int j = 0; j < oPin.size(); j++)
+            {
+                if(oPin.get(j).getOutput())
+                    result = 1;
+                else
+                    result = 0;
+
+                truthTable = truthTable + " " + result;
+            }
+
+            truthTable += "\n";
         }
 
         System.out.println(truthTable);
