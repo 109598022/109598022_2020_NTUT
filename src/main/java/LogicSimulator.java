@@ -19,7 +19,7 @@ public class LogicSimulator
         boolean isLoad = false;
         FileReader fileReader = null;
         StringBuilder contentBuilder = new StringBuilder();
-        String command = "";
+        String command;
 
         System.out.println(file);
 
@@ -35,7 +35,7 @@ public class LogicSimulator
         try (BufferedReader bufferReader = new BufferedReader(fileReader))
         {
 
-            String sCurrentLine = "";
+            String sCurrentLine;
             while ((sCurrentLine = bufferReader.readLine()) != null)
             {
                 contentBuilder.append(sCurrentLine).append("\n");
@@ -63,7 +63,7 @@ public class LogicSimulator
             isOut[i] = false;
 
         for(int i = 0; i < gateNumber; i++)
-            setDevice(commandSplit[i + 2], i);
+            setDevice(commandSplit[i + 2]);
         for(int i = 0; i < gateNumber; i++)
             setGate(commandSplit[i + 2], i, isOut);
 
@@ -96,7 +96,7 @@ public class LogicSimulator
         return isSet;
     }
 
-    public boolean setDevice(String command, int gateNum)
+    public boolean setDevice(String command)
     {
         boolean isSet = false;
         String[] commandSplit = command.split(" ");
@@ -191,7 +191,7 @@ public class LogicSimulator
         for(int i = 0; i < iPin.size(); i++)
             iPin.get(i).setInput(booleans.get(i));
 
-        int result = 0;
+        int result;
 
         for(int i = 0; i < iPin.size(); i++)
         {
@@ -275,7 +275,7 @@ public class LogicSimulator
             for(int j = 0; j < iPin.size(); j++)
                 iPin.get(j).setInput(booleans[j]);
 
-            int result = 0;
+            int result;
 
             for(int j = 0; j < iPin.size(); j++)
             {
