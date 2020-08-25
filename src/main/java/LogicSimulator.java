@@ -15,7 +15,8 @@ public class LogicSimulator
 
     }
 
-    public boolean load(String file){
+    public boolean load(String file)
+    {
         boolean isLoad = false;
         FileReader fileReader = null;
         StringBuilder contentBuilder = new StringBuilder();
@@ -30,6 +31,7 @@ public class LogicSimulator
         catch(FileNotFoundException e)
         {
             System.out.println("File not found or file format error!!\n");
+            return isLoad;
         }
 
         try (BufferedReader bufferReader = new BufferedReader(fileReader))
@@ -77,6 +79,7 @@ public class LogicSimulator
             }
         }
 
+        isLoad = true;
         return isLoad;
     }
 
@@ -305,5 +308,14 @@ public class LogicSimulator
         System.out.println(truthTable);
 
         return truthTable;
+    }
+
+    public String outLine()
+    {
+        String output = "";
+
+        output += "Circuit: " + iPin.size() + " input pins, " + oPin.size() + " output pins and " + circuits.size() + " gates ";
+
+        return output;
     }
 }

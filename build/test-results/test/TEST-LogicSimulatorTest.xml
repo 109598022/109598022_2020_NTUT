@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LogicSimulatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-25T02:44:02" hostname="DESKTOP-6U2CMUL" time="0.014">
+<testsuite name="LogicSimulatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-25T03:21:57" hostname="DESKTOP-6U2CMUL" time="0.012">
   <properties/>
   <testcase name="testGetTruthTable2" classname="LogicSimulatorTest" time="0.008"/>
   <testcase name="testGetSimulationResult2" classname="LogicSimulatorTest" time="0.001"/>
-  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.002"/>
+  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.001"/>
   <testcase name="testGetTruthTable" classname="LogicSimulatorTest" time="0.001"/>
   <system-out><![CDATA[src/File2.lcf
 Truth table:
