@@ -1,7 +1,5 @@
 import org.junit.*;
-
 import java.util.Vector;
-
 import static org.junit.Assert.*;
 
 public class LogicSimulatorTest
