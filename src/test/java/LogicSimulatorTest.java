@@ -2,8 +2,7 @@ import org.junit.*;
 import java.util.Vector;
 import static org.junit.Assert.*;
 
-public class LogicSimulatorTest
-{
+public class LogicSimulatorTest {
     String file1Path;
     String file2Path;
 
@@ -22,7 +21,6 @@ public class LogicSimulatorTest
         logicSimulator.load(file1Path);
 
         Vector<Boolean> inputValues = new Vector<>();
-
         inputValues.add(false);
         inputValues.add(true);
         inputValues.add(true);
@@ -32,27 +30,17 @@ public class LogicSimulatorTest
                 "1 2 3 | 1\n" +
                 "------+--\n" +
                 "0 1 1 | 0\n", logicSimulator.getSimulationResult(inputValues));
-    }
 
-
-    @Test
-    public void testGetSimulationResult2()
-    {
-        LogicSimulator logicSimulator = new LogicSimulator();
-
-        logicSimulator.load(file2Path);
-
-        Vector<Boolean> inputValues = new Vector<>();
-
+        inputValues = new Vector<>();
+        inputValues.add(true);
         inputValues.add(false);
-        inputValues.add(true);
-        inputValues.add(true);
+        inputValues.add(false);
 
         assertEquals("Simulation Result:\n" +
-                "i i i | o o\n" +
-                "1 2 3 | 1 2\n" +
-                "------+----\n" +
-                "0 1 1 | 0 1\n", logicSimulator.getSimulationResult(inputValues));
+                "i i i | o\n" +
+                "1 2 3 | 1\n" +
+                "------+--\n" +
+                "1 0 0 | 1\n", logicSimulator.getSimulationResult(inputValues));
     }
 
     @Test
@@ -74,12 +62,8 @@ public class LogicSimulatorTest
                 "1 0 1 | 1\n" +
                 "1 1 0 | 0\n" +
                 "1 1 1 | 0\n", logicSimulator.getTruthTable());
-    }
 
-    @Test
-    public void testGetTruthTable2()
-    {
-        LogicSimulator logicSimulator = new LogicSimulator();
+        logicSimulator = new LogicSimulator();
 
         logicSimulator.load(file2Path);
 

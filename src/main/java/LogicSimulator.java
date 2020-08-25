@@ -15,6 +15,13 @@ public class LogicSimulator
 
     }
 
+    public void clear()
+    {
+        circuits.clear();
+        iPin.clear();
+        oPin.clear();
+    }
+
     public boolean load(String file)
     {
         boolean isLoad = false;
@@ -22,7 +29,7 @@ public class LogicSimulator
         StringBuilder contentBuilder = new StringBuilder();
         String command;
 
-        System.out.println(file);
+        //System.out.println(file);
 
         try
         {
@@ -31,6 +38,7 @@ public class LogicSimulator
         catch(FileNotFoundException e)
         {
             System.out.println("File not found or file format error!!\n");
+            isLoad = false;
             return isLoad;
         }
 
@@ -220,7 +228,7 @@ public class LogicSimulator
 
         simulationResult += "\n";
 
-        System.out.println(simulationResult);
+        //System.out.println(simulationResult);
 
         return simulationResult;
     }
@@ -305,7 +313,7 @@ public class LogicSimulator
             truthTable += "\n";
         }
 
-        System.out.println(truthTable);
+        //System.out.println(truthTable);
 
         return truthTable;
     }
@@ -314,8 +322,13 @@ public class LogicSimulator
     {
         String output = "";
 
-        output += "Circuit: " + iPin.size() + " input pins, " + oPin.size() + " output pins and " + circuits.size() + " gates ";
+        output += "Circuit: " + iPin.size() + " input pins, " + oPin.size() + " output pins and " + circuits.size() + " gates\n";
 
         return output;
+    }
+
+    public int getIPinNum()
+    {
+        return iPin.size();
     }
 }

@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class TextUI
 {
@@ -57,11 +58,13 @@ public class TextUI
                 System.out.print("Please key in a file path:");
                 String fileName = scanner.next();
 
-                ls.load(fileName);
+                System.out.println(fileName);
+
+                ls.clear();
+                isLoad = ls.load(fileName);
                 String output = ls.outLine();
                 System.out.println(output);
 
-                isLoad = true;
                 break;
             }
 
@@ -69,8 +72,36 @@ public class TextUI
             {
                 if(isLoad)
                 {
-                    //未完成
-                    System.out.print(ls.getSimulationResult(scanner.next()));
+                    int iPinNum = ls.getIPinNum();
+                    Vector<Boolean> booleans = new Vector<>();
+
+                    for(int i = 1; i <= iPinNum; i++)
+                    {
+                        System.out.print("Please key in the value of input pin " + i + ": ");
+
+                        String inputNum = "";
+
+                        try
+                        {
+                            inputNum = scanner.next();
+                        }
+                        catch (java.util.InputMismatchException e)
+                        {
+                            System.out.println("The value of input pin must be number");
+                        }
+
+                        if(inputNum.equals("0"))
+                            booleans.add(false);
+                        else if(inputNum.equals("1"))
+                            booleans.add(true);
+                        else
+                        {
+                            System.out.println("The value of input pin must be 0/1");
+                            i--;
+                        }
+                    }
+
+                    System.out.print(ls.getSimulationResult(booleans) + "\n");
                 }
                 else
                     System.out.println("Please load an lcf file, before using this operation.\n");
@@ -80,7 +111,7 @@ public class TextUI
             {
                 if(isLoad)
                 {
-                    System.out.print(ls.getTruthTable());
+                    System.out.print(ls.getTruthTable() + "\n");
                 }
                 else
                     System.out.println("Please load an lcf file, before using this operation.\n");
