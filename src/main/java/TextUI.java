@@ -58,7 +58,7 @@ public class TextUI
                 System.out.print("Please key in a file path:");
                 String fileName = scanner.next();
 
-                System.out.println(fileName);
+                //System.out.println(fileName);
 
                 ls.clear();
                 isLoad = ls.load(fileName);
