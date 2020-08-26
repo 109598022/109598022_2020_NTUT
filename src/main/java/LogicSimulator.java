@@ -29,8 +29,6 @@ public class LogicSimulator
         StringBuilder contentBuilder = new StringBuilder();
         String command;
 
-        //System.out.println(file);
-
         try
         {
             fileReader = new FileReader(file);
@@ -59,14 +57,9 @@ public class LogicSimulator
         command = contentBuilder.toString();
         String[] commandSplit = command.split("\n");
 
-        //for(int i = 0; i < commandSplit.length; i++)
-        //    System.out.println(commandSplit[i]);
-
         setIPin(commandSplit[0]);
 
         int gateNumber = Integer.parseInt(commandSplit[1]);
-
-        //System.out.println(gateNumber);
 
         boolean[] isOut = new boolean[gateNumber];
         for(int i = 0; i < gateNumber; i++)
@@ -96,7 +89,6 @@ public class LogicSimulator
         boolean isSet = false;
 
         int iPinNumber = Integer.parseInt(command);
-        //System.out.println(iPinNumber);
 
         for(int i = 0; i < iPinNumber; i++)
         {
@@ -113,21 +105,16 @@ public class LogicSimulator
         String[] commandSplit = command.split(" ");
         Device device = null;
 
-        //System.out.println(command);
-
         switch (commandSplit[0])
         {
             case "1":
                 device = new GateAND();
-                //System.out.println(gateNum + ": AND");
                 break;
             case "2":
                 device = new GateOR();
-                //System.out.println(gateNum + ": OR");
                 break;
             case "3":
                 device = new GateNOT();
-                //System.out.println(gateNum + ": NOT");
                 break;
         }
 
@@ -147,8 +134,6 @@ public class LogicSimulator
             double doubleCommandLine = Double.parseDouble(commandSplit[count]);
             int commandLine = (int)doubleCommandLine;
 
-            //System.out.println(commandLine);
-
             if(commandLine < 0)
             {
                 commandLine *= -1;
@@ -157,8 +142,6 @@ public class LogicSimulator
             else
             {
                 commandLine -= 1;
-
-                //System.out.println(circuits.get(commandLine).toString());
 
                 circuits.get(gateNum).addInputPin(circuits.get(commandLine));
                 isOut[commandLine] = true;
@@ -175,8 +158,6 @@ public class LogicSimulator
         String simulationResult = "";
 
         simulationResult += "Simulation Result:\n";
-
-        //System.out.println("iPin size: " + iPin.size());
 
         for(int i = 0; i < iPin.size(); i++)
             simulationResult += "i ";
@@ -227,9 +208,6 @@ public class LogicSimulator
         }
 
         simulationResult += "\n";
-
-        //System.out.println(simulationResult);
-
         return simulationResult;
     }
 
@@ -312,8 +290,6 @@ public class LogicSimulator
 
             truthTable += "\n";
         }
-
-        //System.out.println(truthTable);
 
         return truthTable;
     }
