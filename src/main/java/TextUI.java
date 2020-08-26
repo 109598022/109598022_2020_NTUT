@@ -62,7 +62,7 @@ public class TextUI
 
                 ls.clear();
                 isLoad = ls.load(fileName);
-                String output = ls.outLine();
+                String output = "Circuit: " + ls.getIPinSize() + " input pins, " + ls.getOPinSize() + " output pins and " + ls.getCircuitSize() + " gates\n";
                 System.out.println(output);
 
                 break;
@@ -72,7 +72,7 @@ public class TextUI
             {
                 if(isLoad)
                 {
-                    int iPinNum = ls.getIPinNum();
+                    int iPinNum = ls.getIPinSize();
                     Vector<Boolean> booleans = new Vector<>();
 
                     for(int i = 1; i <= iPinNum; i++)

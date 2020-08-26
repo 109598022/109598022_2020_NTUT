@@ -1,49 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LogicSimulatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-25T07:53:53" hostname="DESKTOP-6U2CMUL" time="0.014">
+<testsuite name="LogicSimulatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-26T01:15:37" hostname="DESKTOP-6U2CMUL" time="0.009">
   <properties/>
-  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.009"/>
-  <testcase name="testGetTruthTable" classname="LogicSimulatorTest" time="0.004"/>
-  <system-out><![CDATA[src/File1.lcf
-Simulation Result:
-i i i | o
-1 2 3 | 1
-------+--
-0 1 1 | 0
-
-Simulation Result:
-i i i | o
-1 2 3 | 1
-------+--
-1 0 0 | 1
-
-src/File1.lcf
-Truth table:
-i i i | o
-1 2 3 | 1
-------+--
-0 0 0 | 0
-0 0 1 | 0
-0 1 0 | 0
-0 1 1 | 0
-1 0 0 | 1
-1 0 1 | 1
-1 1 0 | 0
-1 1 1 | 0
-
-src/File2.lcf
-Truth table:
-i i i | o o
-1 2 3 | 1 2
-------+----
-0 0 0 | 0 1
-0 0 1 | 0 1
-0 1 0 | 0 1
-0 1 1 | 0 1
-1 0 0 | 1 0
-1 0 1 | 1 0
-1 1 0 | 0 1
-1 1 1 | 0 1
-
-]]></system-out>
+  <testcase name="testGetSimulationResult" classname="LogicSimulatorTest" time="0.006"/>
+  <testcase name="testGetTruthTable" classname="LogicSimulatorTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

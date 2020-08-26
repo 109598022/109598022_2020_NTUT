@@ -318,17 +318,18 @@ public class LogicSimulator
         return truthTable;
     }
 
-    public String outLine()
-    {
-        String output = "";
-
-        output += "Circuit: " + iPin.size() + " input pins, " + oPin.size() + " output pins and " + circuits.size() + " gates\n";
-
-        return output;
-    }
-
-    public int getIPinNum()
+    public int getIPinSize()
     {
         return iPin.size();
+    }
+
+    public int getOPinSize()
+    {
+        return oPin.size();
+    }
+
+    public int getCircuitSize()
+    {
+        return circuits.size();
     }
 }
